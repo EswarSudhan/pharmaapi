@@ -7,7 +7,10 @@ const UserSchema = new mongoose.Schema(
     password: { type: String, required: true },
     isAdmin: {
       type: Boolean,
-      default: false,}
+      default: false,},
+      isRetailer: {
+        type: Boolean,
+        default: false,}
   }
     
 );
