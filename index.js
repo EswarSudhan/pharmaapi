@@ -115,7 +115,7 @@ app.get("/api/products", (req, res) => {
 
 
 app.get("/api/products/find/:id", (req, res) => {
-  const productId = req.params.id;
+  const productId = req.params.id; 
 
 
   ProductModel.findById(productId)
