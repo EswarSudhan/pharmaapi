@@ -166,7 +166,7 @@ app.delete("/api/users/delete/:username", (req, res) => {
       res.json({ message: "User deleted successfully" });
     })
     .catch((err) => {
-      console.error("Error deleting user:", err);
+      console.error("Error deleting user:", err);     
       res.status(500).json({ error: "Internal Server Error" });
     });
 });
